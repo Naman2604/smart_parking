@@ -5,7 +5,7 @@ from analytics import get_stats, update_stats
 
 app = Flask(__name__)
 
-camera = cv2.VideoCapture(0)
+camera = cv2.VideoCapture("parking.mp4")
 
 def generate_frames():
     while True:
